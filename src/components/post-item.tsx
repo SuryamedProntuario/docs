@@ -1,6 +1,6 @@
 import { Calendar } from 'lucide-react'
 import Link from 'next/link'
-import { formatDistanceToNow } from 'date-fns'
+import { format, formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
 import { Button } from '@/components/ui/button'
 
@@ -18,7 +18,7 @@ export function PostItem({
   description,
 }: PostItemInterface) {
   return (
-    <article className="flex flex-col gap-2  border-b px-1 py-3 transition-colors hover:bg-muted/80">
+    <article className="flex rounded-lg flex-col gap-2  border-b px-3 py-3 transition-colors hover:bg-muted/80">
       <h2 className="text-2xl font-bold tracking-tight text-foreground">
         <Link href={slug}>{title}</Link>
       </h2>
@@ -30,12 +30,7 @@ export function PostItem({
           <dt className="sr-only">Published On</dt>
           <dd className="flex items-center  gap-1 text-sm font-medium text-slate-800 dark:text-slate-200">
             <Calendar className="size-4" />
-            <time dateTime={date}>
-              {formatDistanceToNow(date, {
-                locale: ptBR,
-                addSuffix: true,
-              })}
-            </time>
+            <time dateTime={date}>{format(date, 'dd/MM/yyyy')}</time>
           </dd>
         </dl>
         <Button className="mt-4 p-0" asChild variant={'link'}>

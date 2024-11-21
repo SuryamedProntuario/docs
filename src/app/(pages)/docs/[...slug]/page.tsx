@@ -39,7 +39,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
   return (
     <>
-      <div className="flex  w-full max-w-4xl flex-col   gap-24 px-8 py-28">
+      <div className="flex  w-full max-w-4xl flex-col   gap-24 px-8 ">
         <div className="flex w-full flex-col items-start justify-start">
           <h1 className="text-4xl font-bold tracking-tighter">{post.title}</h1>
           {post.description ? (
@@ -50,7 +50,7 @@ export default async function PostPage({ params }: PostPageProps) {
             <time dateTime={post.date}>{format(post.date, 'dd/MM/yyyy')}</time>
           </span>
           <Button variant={'link'} className="gap-2 p-0">
-            <Link href="/blog">Voltar para o blog</Link>
+            <Link href="/docs">Voltar para o inicio</Link>
             <LinkLucide className="size-4" />
           </Button>
           <div className="my-4 h-0.5 w-full rounded-full bg-muted" />

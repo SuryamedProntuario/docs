@@ -1,3 +1,13 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "plugins": ["simple-import-sort", "prettier-plugin-tailwindcss"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "camelcase": "off",
+    "prettier-plugin-tailwindcss": "error"
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  }
 }
