@@ -14,13 +14,11 @@ export function MenuNavegacaoLateral () {
             </a>
           </Button>
           <Button asChild variant={"secondary"} className="w-full">
-            <a href="https://suryamed.com.br" target="_blank">
+            <Link href="/docs">
               Inicio
-            </a>
+            </Link>
           </Button>
           </div>
-
-       
       </div>
      
       <ScrollArea className="h-[calc(100vh-260px)]  overflow-y-auto">

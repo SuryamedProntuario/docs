@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 export function Header () {
   return (
     <>
-      <header className="flex sticky top-0 bg-background  z-10 justify-between gap-2 items-center  py-1 px-4 border-b ">
+      <header className="flex  sticky top-0 bg-background  z-50 justify-between gap-2 items-center  py-1 px-4 border-b ">
           <Link href="/" className="font-bold antialiased text-xl">
             SuryaMED
           </Link >

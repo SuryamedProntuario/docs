@@ -2,6 +2,8 @@ import { posts } from '#site/content'
 import { PostItem } from '@/components/post-item'
 import { sortPosts } from '@/lib/utils'
 import { Metadata } from 'next'
+import { Input } from "@/components/ui/input"
+
 
 export const metadata: Metadata = {
   title: 'Blog | Desenvolvedor Fullstack',
@@ -24,7 +26,7 @@ export default async function Docs() {
           <hr className="mb-8 mt-4" />
 
           <h2 className='text-xl font-bold mb-5'>Percorra sem perder tempo por todo conteúdo.</h2>
-
+         
           {displayPosts?.length > 0 ? (
             <ul className="flex w-full flex-col gap-6">
               {displayPosts.map((post) => {

@@ -31,13 +31,9 @@ export default function RootLayout({
       <body
         className={`${cn("min-h-screen bg-background font-sans antialiased", geistSans.variable, geistMono.variable)} `}
       >
-           <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-          >
-        <Header />
+         
         {children}
-        </ThemeProvider>
+        
       </body>
     </html>
   );
