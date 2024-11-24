@@ -3,13 +3,11 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 
-import { Header } from "@/components/header";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <div className="relative z-10 flex min-h-[calc(100dvh-100px)] flex-col items-center justify-center overflow-hidden">
         <motion.img
           initial={{

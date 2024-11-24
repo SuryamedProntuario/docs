@@ -1,20 +1,19 @@
-import { posts } from '#site/content'
-import { PostItem } from '@/components/post-item'
-import { sortPosts } from '@/lib/utils'
-import { Metadata } from 'next'
-import { Input } from "@/components/ui/input"
+import { Metadata } from "next";
 
+import { PostItem } from "@/components/post-item";
+import { sortPosts } from "@/lib/utils";
+import { posts } from "#site/content";
 
 export const metadata: Metadata = {
-  title: 'Blog | Desenvolvedor Fullstack',
-}
+  title: "Blog | Desenvolvedor Fullstack",
+};
 
 export default async function Docs() {
-  const sortedPosts = sortPosts(posts.filter((post) => post.published))
-  const displayPosts = sortedPosts
+  const sortedPosts = sortPosts(posts.filter((post) => post.published));
+  const displayPosts = sortedPosts;
 
   return (
-    <div className="flex  w-full max-w-4xl flex-col   gap-24 px-8 ">
+    <div className="flex w-full max-w-4xl flex-col gap-24 px-8">
       <div className="flex w-full flex-col items-start justify-start">
         <h1 className="text-5xl font-bold tracking-tighter text-foreground">
           Começando com SuryaMED
@@ -25,23 +24,25 @@ export default async function Docs() {
           </span>
           <hr className="mb-8 mt-4" />
 
-          <h2 className='text-xl font-bold mb-5'>Percorra sem perder tempo por todo conteúdo.</h2>
-         
+          <h2 className="mb-5 text-xl font-bold">
+            Percorra sem perder tempo por todo conteúdo.
+          </h2>
+
           {displayPosts?.length > 0 ? (
             <ul className="flex w-full flex-col gap-6">
               {displayPosts.map((post) => {
-                const { title, slug, date, description } = post
+                const { title, slug, date, description } = post;
 
                 return (
                   <li key={slug}>
-                    <PostItem 
+                    <PostItem
                       slug={slug}
                       title={title}
                       date={date}
                       description={description}
                     />
                   </li>
-                )
+                );
               })}
             </ul>
           ) : (
@@ -50,5 +51,5 @@ export default async function Docs() {
         </div>
       </div>
     </div>
-  )
+  );
 }
