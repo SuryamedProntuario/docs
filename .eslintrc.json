@@ -1,10 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"],
-  "plugins": ["simple-import-sort", "prettier-plugin-tailwindcss"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended" // Isso ativa Prettier e desabilita regras conflitantes
+  ],
+  "plugins": ["simple-import-sort"],
   "rules": {
     "simple-import-sort/imports": "error",
     "camelcase": "off",
-    "prettier-plugin-tailwindcss": "error"
+    "no-unused-vars":"error",
+    "no-unused-expressions":"error"
   },
   "parserOptions": {
     "sourceType": "module",

@@ -1,37 +1,35 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import { motion } from "motion/react";
 import Link from "next/link";
-import bannerHero from "../../public/static/lp-hero-wpp.svg"
 
-
-import { motion } from 'motion/react'
 import { Header } from "@/components/header";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-   <>
-     <Header />
-     <div className="relative overflow-hidden min-h-[calc(100dvh-100px)] flex flex-col z-10 justify-center items-center">
+    <>
+      <Header />
+      <div className="relative z-10 flex min-h-[calc(100dvh-100px)] flex-col items-center justify-center overflow-hidden">
         <motion.img
-            initial={{
-              translateY: 100,
-              opacity: 0,
-            }}
-            viewport={{ once: true }}
-            whileInView={{
-              translateY: 0,
-              opacity: 0.4,
-              transition: {
-                duration: 1, // Duração da animação
-              },
-            }}
-          
-          src="/static/lp-hero-wpp.svg" 
-          className="w-full z-0 absolute !brightness-0 dark:!brightness-100" alt=""/>
+          initial={{
+            translateY: 100,
+            opacity: 0,
+          }}
+          viewport={{ once: true }}
+          whileInView={{
+            translateY: 0,
+            opacity: 0.4,
+            transition: {
+              duration: 1, // Duração da animação
+            },
+          }}
+          src="/static/lp-hero-wpp.svg"
+          className="absolute z-0 w-full !brightness-0 dark:!brightness-100"
+          alt=""
+        />
 
-        <motion.h1 
+        <motion.h1
           initial={{
             translateY: -50,
             opacity: 0,
@@ -47,10 +45,11 @@ export default function Home() {
               duration: 1, // Duração da animação
             },
           }}
-          className="text-6xl text-center mb-20 tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-foreground to-muted-foreground">
-            SuryaMED Prontuário médico de ponta
+          className="mb-20 bg-gradient-to-b from-foreground to-muted-foreground bg-clip-text text-center text-6xl font-extrabold tracking-tight text-transparent"
+        >
+          SuryaMED Prontuário médico de ponta
         </motion.h1>
-      <motion.p 
+        <motion.p
           initial={{
             translateY: 50,
             opacity: 0,
@@ -66,54 +65,89 @@ export default function Home() {
               duration: 0.8, // Duração da animação
             },
           }}
-        className="text-lg text-muted-foreground font-normal max-w-2xl text-center mb-8">Aprimore seus atendimentos com <span className="text-foreground font-bold">transcrição de consultas </span> 
-com <span className="text-foreground font-bold">Inteligência Artificial</span > e gerenciamento de dados de pacientes.
-      </motion.p>
-      <div className="flex gap-2 z-10 items-center">
-        <Button asChild>
-          <Link href="/docs">
-            Comece por aqui
-          </Link>
-        </Button>
-        <Button asChild variant={"outline"} className="backdrop-blur-md">
-          <a href="https://app.suryamed.com.br/auth/login">
-          Comece a atender
-          </a>
-        </Button>
+          className="mb-8 max-w-2xl text-center text-lg font-normal text-muted-foreground"
+        >
+          Aprimore seus atendimentos com{" "}
+          <span className="font-bold text-foreground">
+            transcrição de consultas{" "}
+          </span>
+          com{" "}
+          <span className="font-bold text-foreground">
+            Inteligência Artificial
+          </span>{" "}
+          e gerenciamento de dados de pacientes.
+        </motion.p>
+        <div className="z-10 flex items-center gap-2">
+          <Button asChild>
+            <Link href="/docs">Comece por aqui</Link>
+          </Button>
+          <Button asChild variant={"outline"} className="backdrop-blur-md">
+            <a href="https://app.suryamed.com.br/auth/login">
+              Comece a atender
+            </a>
+          </Button>
+        </div>
       </div>
+      <section className="mx-auto flex w-full max-w-[1920px] flex-col items-center px-4 py-10">
+        <h2 className="mb-3 text-3xl font-semibold">Mais procurados</h2>
 
-     
-    </div>
-    <section className="w-full py-10 flex-col flex items-center max-w-[1920px] mx-auto px-4">
-      <h2 className="font-semibold text-3xl mb-3">Mais procurados</h2>
-
-      <article className=" w-full grid grid-cols-3 gap-4">
-        <Link href="" className="border p-4 rounded-lg bg-muted/50 hover:shadow-inner transition-all">
-          <h3 className="font-semibold text-xl">Como criar um paciente?</h3>
-          <p className="text-sm text-muted-foreground">Um caminho rápido e pratico para criar o paciente da sua clinica</p>
-        </Link >
-        <Link href="" className="border p-4 rounded-lg bg-muted/50 hover:shadow-inner transition-all">
-          <h3 className="font-semibold text-xl">Criar uma clínica?</h3>
-          <p className="text-sm text-muted-foreground">Crie sua clinica</p>
-        </Link >
-        <Link href="" className="border p-4 rounded-lg bg-muted/50 hover:shadow-inner transition-all">
-          <h3 className="font-semibold text-xl">Como iniciar uma consulta?</h3>
-          <p className="text-sm text-muted-foreground">Um caminho rápido e pratico para criar o paciente da sua clinica</p>
-        </Link >
-        <Link href="" className="border p-4 rounded-lg bg-muted/50 hover:shadow-inner transition-all">
-          <h3 className="font-semibold text-xl">Como criar um paciente?</h3>
-          <p className="text-sm text-muted-foreground">Um caminho rápido e pratico para criar o paciente da sua clinica</p>
-        </Link >
-        <Link href="" className="border p-4 rounded-lg bg-muted/50 hover:shadow-inner transition-all">
-          <h3 className="font-semibold text-xl">Como criar um paciente?</h3>
-          <p className="text-sm text-muted-foreground">Um caminho rápido e pratico para criar o paciente da sua clinica</p>
-        </Link >
-        <Link href="" className="border p-4 rounded-lg bg-muted/50 hover:shadow-inner transition-all">
-          <h3 className="font-semibold text-xl">Como criar um paciente?</h3>
-          <p className="text-sm text-muted-foreground">Um caminho rápido e pratico para criar o paciente da sua clinica</p>
-        </Link >
-      </article>
-    </section>
-   </>
+        <article className="grid w-full grid-cols-3 gap-4">
+          <Link
+            href=""
+            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
+          >
+            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
+            <p className="text-sm text-muted-foreground">
+              Um caminho rápido e pratico para criar o paciente da sua clinica
+            </p>
+          </Link>
+          <Link
+            href=""
+            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
+          >
+            <h3 className="text-xl font-semibold">Criar uma clínica?</h3>
+            <p className="text-sm text-muted-foreground">Crie sua clinica</p>
+          </Link>
+          <Link
+            href=""
+            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
+          >
+            <h3 className="text-xl font-semibold">
+              Como iniciar uma consulta?
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Um caminho rápido e pratico para criar o paciente da sua clinica
+            </p>
+          </Link>
+          <Link
+            href=""
+            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
+          >
+            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
+            <p className="text-sm text-muted-foreground">
+              Um caminho rápido e pratico para criar o paciente da sua clinica
+            </p>
+          </Link>
+          <Link
+            href=""
+            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
+          >
+            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
+            <p className="text-sm text-muted-foreground">
+              Um caminho rápido e pratico para criar o paciente da sua clinica
+            </p>
+          </Link>
+          <Link
+            href=""
+            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
+          >
+            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
+            <p className="text-sm text-muted-foreground">
+              Um caminho rápido e pratico para criar o paciente da sua clinica
+            </p>
+          </Link>
+        </article>
+      </section>
+    </>
   );
 }
