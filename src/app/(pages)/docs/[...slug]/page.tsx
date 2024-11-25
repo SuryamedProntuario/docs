@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Suryamed",
 }
 
-async function getPostFromParams(params: PostPageProps["params"]) {
+async function getPostFromParams(params: any) {
   // Verifica se params ou params.slug é undefined
   if (!params?.slug || params.slug.length === 0) {
     return null
@@ -30,15 +30,13 @@ async function getPostFromParams(params: PostPageProps["params"]) {
   return post
 }
 
-export async function generateStaticParams(): Promise<
-  Array<{ slug: string[] }>
-> {
+export async function generateStaticParams() {
   return posts
     .filter((post) => post.slugAsParams)
     .map((post) => ({ slug: post.slugAsParams.split("/") }))
 }
 
-export default async function PostPage({ params }: PostPageProps) {
+export default async function PostPage({ params }: any) {
   const post = await getPostFromParams(params)
 
   if (!post || !post.published) {
