@@ -9,17 +9,15 @@ import { Button } from "@/components/ui/button"
 import { posts } from "#site/content"
 
 interface PostPageProps {
-  params: {
-    slug: string[]
-  }
+  params: Record<string, string | string[]>
 }
 
 export const metadata: Metadata = {
-  title: "Blog | Desenvolvedor Fullstack",
+  title: "Suryamed",
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
-  const slug = params?.slug.join("/")
+  const slug = Array.isArray(params.slug) ? params.slug.join("/") : params.slug
   const post = posts.find((post) => post.slugAsParams === slug)
 
   return post
