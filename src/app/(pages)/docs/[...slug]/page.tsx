@@ -19,13 +19,15 @@ export const metadata: Metadata = {
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
-  const slug = params.slug.join("/")
+  const slug = params?.slug.join("/")
   const post = posts.find((post) => post.slugAsParams === slug)
 
   return post
 }
 
-export async function generateStaticParams(): Promise<{ slug: string[] }[]> {
+export async function generateStaticParams(): Promise<
+  PostPageProps["params"][]
+> {
   return posts.map((post) => ({ slug: post.slugAsParams.split("/") }))
 }
 
