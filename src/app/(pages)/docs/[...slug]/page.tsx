@@ -8,11 +8,11 @@ import { MDXContent } from "@/components/mdx-components"
 import { Button } from "@/components/ui/button"
 import { posts } from "#site/content"
 
-interface PostPageProps {
-  params: {
-    slug: string[]
-  }
-}
+// interface PostPageProps {
+//   params: {
+//     slug: string[]
+//   }
+// }
 
 export const metadata: Metadata = {
   title: "Suryamed",
