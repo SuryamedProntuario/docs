@@ -1,7 +1,7 @@
-import Link from "next/link";
+import Link from "next/link"
 
-import { ModeToggle } from "./toggle-theme";
-import { Button } from "./ui/button";
+import { ModeToggle } from "./toggle-theme"
+import { Button } from "./ui/button"
 
 export function Header() {
   return (
@@ -19,5 +19,5 @@ export function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }
