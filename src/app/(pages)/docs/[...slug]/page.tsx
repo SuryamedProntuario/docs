@@ -9,7 +9,9 @@ import { Button } from "@/components/ui/button"
 import { posts } from "#site/content"
 
 interface PostPageProps {
-  params: Record<string, string | string[]>
+  params: {
+    slug: string[]
+  }
 }
 
 export const metadata: Metadata = {
@@ -17,15 +19,13 @@ export const metadata: Metadata = {
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
-  const slug = Array.isArray(params.slug) ? params.slug.join("/") : params.slug
+  const slug = params.slug.join("/")
   const post = posts.find((post) => post.slugAsParams === slug)
 
   return post
 }
 
-export async function generateStaticParams(): Promise<
-  PostPageProps["params"][]
-> {
+export async function generateStaticParams(): Promise<{ slug: string[] }[]> {
   return posts.map((post) => ({ slug: post.slugAsParams.split("/") }))
 }
 
