@@ -1,16 +1,16 @@
-import { Metadata } from "next";
+import { Metadata } from "next"
 
-import { PostItem } from "@/components/post-item";
-import { sortPosts } from "@/lib/utils";
-import { posts } from "#site/content";
+import { PostItem } from "@/components/post-item"
+import { sortPosts } from "@/lib/utils"
+import { posts } from "#site/content"
 
 export const metadata: Metadata = {
   title: "Blog | Desenvolvedor Fullstack",
-};
+}
 
 export default async function Docs() {
-  const sortedPosts = sortPosts(posts.filter((post) => post.published));
-  const displayPosts = sortedPosts;
+  const sortedPosts = sortPosts(posts.filter((post) => post.published))
+  const displayPosts = sortedPosts
 
   return (
     <div className="flex w-full max-w-4xl flex-col gap-24 px-8">
@@ -31,7 +31,7 @@ export default async function Docs() {
           {displayPosts?.length > 0 ? (
             <ul className="flex w-full flex-col gap-6">
               {displayPosts.map((post) => {
-                const { title, slug, date, description } = post;
+                const { title, slug, date, description } = post
 
                 return (
                   <li key={slug}>
@@ -42,7 +42,7 @@ export default async function Docs() {
                       description={description}
                     />
                   </li>
-                );
+                )
               })}
             </ul>
           ) : (
@@ -51,5 +51,5 @@ export default async function Docs() {
         </div>
       </div>
     </div>
-  );
+  )
 }

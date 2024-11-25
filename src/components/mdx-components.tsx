@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import * as runtime from 'react/jsx-runtime'
+import Image from "next/image"
+import * as runtime from "react/jsx-runtime"
 
 const useMDXComponent = (code: string) => {
   // eslint-disable-next-line no-new-func
