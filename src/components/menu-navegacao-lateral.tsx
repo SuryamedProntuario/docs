@@ -6,7 +6,7 @@ import { ScrollArea } from "./ui/scroll-area"
 
 export function MenuNavegacaoLateral() {
   return (
-    <div className="sticky top-[100px] w-[284px] shrink">
+    <div className="sticky top-[100px] w-[284px] shrink bg-background">
       <div className="mb-6 flex flex-col gap-2 px-2">
         <div className="flex w-full flex-col gap-2">
           <Button asChild variant={"default"} className="w-full">
@@ -20,7 +20,10 @@ export function MenuNavegacaoLateral() {
         </div>
       </div>
 
-      <ScrollArea className="h-[calc(100vh-260px)] overflow-y-auto">
+      <ScrollArea
+        type="always"
+        className="h-[calc(100vh-260px)] overflow-y-auto"
+      >
         <ul className="relative flex flex-col gap-6 px-2">
           <DocsItem.Root>
             <DocsItem.Title>Paciente</DocsItem.Title>
