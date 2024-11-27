@@ -15,11 +15,11 @@ export default async function Docs() {
   return (
     <div className="flex w-full max-w-4xl flex-col gap-24 px-8">
       <div className="flex w-full flex-col items-start justify-start">
-        <h1 className="text-5xl font-bold tracking-tighter text-foreground">
+        <h1 className="text-5xl font-bold tracking-tighter text-primary">
           Começando com SuryaMED
         </h1>
         <div className="w-full">
-          <span className="text-xl font-semibold tracking-tighter text-foreground">
+          <span className="ml-4 text-xl font-semibold tracking-tighter text-primary">
             Seu prontuário online integrado com Inteligência Artificial.
           </span>
           <hr className="mb-8 mt-4" />

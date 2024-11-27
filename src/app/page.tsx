@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 export default function Home() {
   return (
     <>
-      <div className="relative z-10 flex min-h-[calc(100dvh-100px)] flex-col items-center justify-center overflow-hidden">
+      <div className="relative z-10 flex min-h-[calc(100dvh-50px)] flex-col items-center justify-center overflow-hidden">
         <motion.img
           initial={{
             translateY: 100,
@@ -43,7 +43,7 @@ export default function Home() {
               duration: 1, // Duração da animação
             },
           }}
-          className="mb-20 bg-gradient-to-b from-foreground to-muted-foreground bg-clip-text text-center text-6xl font-extrabold tracking-tight text-transparent"
+          className="mb-20 bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-center text-6xl font-extrabold tracking-tight text-transparent"
         >
           SuryaMED Prontuário médico de ponta
         </motion.h1>
@@ -66,11 +66,11 @@ export default function Home() {
           className="mb-8 max-w-2xl text-center text-lg font-normal text-muted-foreground"
         >
           Aprimore seus atendimentos com{" "}
-          <span className="font-bold text-foreground">
+          <span className="font-bold text-primary">
             transcrição de consultas{" "}
           </span>
           com{" "}
-          <span className="font-bold text-foreground">
+          <span className="font-bold text-primary">
             Inteligência Artificial
           </span>{" "}
           e gerenciamento de dados de pacientes.
@@ -86,66 +86,6 @@ export default function Home() {
           </Button>
         </div>
       </div>
-      <section className="mx-auto flex w-full max-w-[1920px] flex-col items-center px-4 py-10">
-        <h2 className="mb-3 text-3xl font-semibold">Mais procurados</h2>
-
-        <article className="grid w-full grid-cols-3 gap-4">
-          <Link
-            href=""
-            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
-          >
-            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
-            <p className="text-sm text-muted-foreground">
-              Um caminho rápido e pratico para criar o paciente da sua clinica
-            </p>
-          </Link>
-          <Link
-            href=""
-            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
-          >
-            <h3 className="text-xl font-semibold">Criar uma clínica?</h3>
-            <p className="text-sm text-muted-foreground">Crie sua clinica</p>
-          </Link>
-          <Link
-            href=""
-            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
-          >
-            <h3 className="text-xl font-semibold">
-              Como iniciar uma consulta?
-            </h3>
-            <p className="text-sm text-muted-foreground">
-              Um caminho rápido e pratico para criar o paciente da sua clinica
-            </p>
-          </Link>
-          <Link
-            href=""
-            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
-          >
-            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
-            <p className="text-sm text-muted-foreground">
-              Um caminho rápido e pratico para criar o paciente da sua clinica
-            </p>
-          </Link>
-          <Link
-            href=""
-            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
-          >
-            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
-            <p className="text-sm text-muted-foreground">
-              Um caminho rápido e pratico para criar o paciente da sua clinica
-            </p>
-          </Link>
-          <Link
-            href=""
-            className="rounded-lg border bg-muted/50 p-4 transition-all hover:shadow-inner"
-          >
-            <h3 className="text-xl font-semibold">Como criar um paciente?</h3>
-            <p className="text-sm text-muted-foreground">
-              Um caminho rápido e pratico para criar o paciente da sua clinica
-            </p>
-          </Link>
-        </article>
-      </section>
     </>
   )
 }
