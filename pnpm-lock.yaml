@@ -4,98 +4,101 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-importers:
 
-  .:
-    dependencies:
-      '@radix-ui/react-accordion':
-        specifier: ^1.2.1
-        version: 1.2.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
-      '@radix-ui/react-dropdown-menu':
-        specifier: ^2.1.2
-        version: 2.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
-      '@radix-ui/react-scroll-area':
-        specifier: ^1.2.1
-        version: 1.2.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
-      '@radix-ui/react-slot':
-        specifier: ^1.1.0
-        version: 1.1.0(@types/react@18.3.12)(react@19.0.0-rc-66855b96-20241106)
-      class-variance-authority:
-        specifier: ^0.7.0
-        version: 0.7.0
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      date-fns:
-        specifier: ^4.1.0
-        version: 4.1.0
-      lucide-react:
-        specifier: ^0.460.0
-        version: 0.460.0(react@19.0.0-rc-66855b96-20241106)
-      motion:
-        specifier: ^11.11.17
-        version: 11.11.17(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
-      next:
-        specifier: 15.0.3
-        version: 15.0.3(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
-      next-themes:
-        specifier: ^0.4.3
-        version: 0.4.3(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
-      react:
-        specifier: 19.0.0-rc-66855b96-20241106
-        version: 19.0.0-rc-66855b96-20241106
-      react-dom:
-        specifier: 19.0.0-rc-66855b96-20241106
-        version: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
-      tailwind-merge:
-        specifier: ^2.5.4
-        version: 2.5.5
-      tailwindcss-animate:
-        specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.15)
-    devDependencies:
-      '@types/node':
-        specifier: ^20
-        version: 20.17.7
-      '@types/react':
-        specifier: ^18
-        version: 18.3.12
-      '@types/react-dom':
-        specifier: ^18
-        version: 18.3.1
-      eslint:
-        specifier: ^8
-        version: 8.57.1
-      eslint-config-next:
-        specifier: 15.0.3
-        version: 15.0.3(eslint@8.57.1)(typescript@5.7.2)
-      eslint-config-prettier:
-        specifier: ^9.1.0
-        version: 9.1.0(eslint@8.57.1)
-      eslint-plugin-prettier:
-        specifier: ^5.2.1
-        version: 5.2.1(eslint-config-prettier@9.1.0)(eslint@8.57.1)(prettier@3.3.3)
-      eslint-plugin-simple-import-sort:
-        specifier: ^12.1.1
-        version: 12.1.1(eslint@8.57.1)
-      postcss:
-        specifier: ^8
-        version: 8.4.49
-      prettier:
-        specifier: ^3.3.3
-        version: 3.3.3
-      prettier-plugin-tailwindcss:
-        specifier: ^0.6.9
-        version: 0.6.9(prettier@3.3.3)
-      tailwindcss:
-        specifier: ^3.4.1
-        version: 3.4.15
-      typescript:
-        specifier: ^5
-        version: 5.7.2
-      velite:
-        specifier: ^0.2.1
-        version: 0.2.1(acorn@8.14.0)
+dependencies:
+  '@radix-ui/react-accordion':
+    specifier: ^1.2.1
+    version: 1.2.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
+  '@radix-ui/react-dropdown-menu':
+    specifier: ^2.1.2
+    version: 2.1.2(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
+  '@radix-ui/react-scroll-area':
+    specifier: ^1.2.1
+    version: 1.2.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
+  '@radix-ui/react-slot':
+    specifier: ^1.1.0
+    version: 1.1.0(@types/react@18.3.12)(react@19.0.0-rc-66855b96-20241106)
+  class-variance-authority:
+    specifier: ^0.7.0
+    version: 0.7.0
+  clsx:
+    specifier: ^2.1.1
+    version: 2.1.1
+  date-fns:
+    specifier: ^4.1.0
+    version: 4.1.0
+  lucide-react:
+    specifier: ^0.460.0
+    version: 0.460.0(react@19.0.0-rc-66855b96-20241106)
+  motion:
+    specifier: ^11.11.17
+    version: 11.11.17(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
+  next:
+    specifier: 15.0.3
+    version: 15.0.3(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
+  next-themes:
+    specifier: ^0.4.3
+    version: 0.4.3(react-dom@19.0.0-rc-66855b96-20241106)(react@19.0.0-rc-66855b96-20241106)
+  react:
+    specifier: 19.0.0-rc-66855b96-20241106
+    version: 19.0.0-rc-66855b96-20241106
+  react-dom:
+    specifier: 19.0.0-rc-66855b96-20241106
+    version: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
+  tailwind-merge:
+    specifier: ^2.5.4
+    version: 2.5.5
+  tailwindcss-animate:
+    specifier: ^1.0.7
+    version: 1.0.7(tailwindcss@3.4.15)
+
+devDependencies:
+  '@tailwindcss/typography':
+    specifier: ^0.5.15
+    version: 0.5.15(tailwindcss@3.4.15)
+  '@types/node':
+    specifier: ^20
+    version: 20.17.7
+  '@types/react':
+    specifier: ^18
+    version: 18.3.12
+  '@types/react-dom':
+    specifier: ^18
+    version: 18.3.1
+  eslint:
+    specifier: ^8
+    version: 8.57.1
+  eslint-config-next:
+    specifier: 15.0.3
+    version: 15.0.3(eslint@8.57.1)(typescript@5.7.2)
+  eslint-config-prettier:
+    specifier: ^9.1.0
+    version: 9.1.0(eslint@8.57.1)
+  eslint-plugin-prettier:
+    specifier: ^5.2.1
+    version: 5.2.1(eslint-config-prettier@9.1.0)(eslint@8.57.1)(prettier@3.3.3)
+  eslint-plugin-simple-import-sort:
+    specifier: ^12.1.1
+    version: 12.1.1(eslint@8.57.1)
+  postcss:
+    specifier: ^8
+    version: 8.4.49
+  prettier:
+    specifier: ^3.3.3
+    version: 3.3.3
+  prettier-plugin-tailwindcss:
+    specifier: ^0.6.9
+    version: 0.6.9(prettier@3.3.3)
+  tailwindcss:
+    specifier: ^3.4.1
+    version: 3.4.15
+  typescript:
+    specifier: ^5
+    version: 5.7.2
+  velite:
+    specifier: ^0.2.1
+    version: 0.2.1(acorn@8.14.0)
+
 
 packages:
 
@@ -827,7 +830,20 @@ packages:
   '@swc/helpers@0.5.13':
     resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
 
-  '@types/acorn@4.0.6':
+
+  /@tailwindcss/typography@0.5.15(tailwindcss@3.4.15):
+    resolution: {integrity: sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20'
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 3.4.15
+    dev: true
+
+  /@types/acorn@4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
 
   '@types/debug@4.1.12':
@@ -3674,12 +3690,20 @@ snapshots:
 
   color-name@1.1.4: {}
 
-  color-string@1.9.1:
+
+  /color-string@1.9.1:
+    resolution: {integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==}
+    requiresBuild: true
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
 
-  color@4.2.3:
+
+  /color@4.2.3:
+    resolution: {integrity: sha512-1rXeuUUiGGrykh+CeBdu5Ie7OJwinCgQY0bc7GCRxy5xVHy+moaqkpL/jqQq0MtQOeYcrqEz4abc5f0KtU7W4A==}
+    engines: {node: '>=12.5.0'}
+    requiresBuild: true
+
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
@@ -3752,7 +3776,11 @@ snapshots:
 
   dequal@2.0.3: {}
 
-  detect-libc@2.0.3: {}
+
+  /detect-libc@2.0.3:
+    resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
+    engines: {node: '>=8'}
+    requiresBuild: true
 
   detect-node-es@1.1.0: {}
 
@@ -4418,7 +4446,11 @@ snapshots:
       call-bind: 1.0.7
       get-intrinsic: 1.2.4
 
-  is-arrayish@0.3.2: {}
+
+  /is-arrayish@0.3.2:
+    resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
+    requiresBuild: true
+
 
   is-async-function@2.0.0:
     dependencies:
@@ -4591,7 +4623,19 @@ snapshots:
     dependencies:
       p-locate: 5.0.0
 
-  lodash.merge@4.6.2: {}
+
+  /lodash.castarray@4.4.0:
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
+    dev: true
+
+  /lodash.isplainobject@4.0.6:
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
+    dev: true
+
+  /lodash.merge@4.6.2:
+    resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    dev: true
+
 
   longest-streak@3.1.0: {}
 
@@ -5108,7 +5152,19 @@ snapshots:
       postcss: 8.4.49
       postcss-selector-parser: 6.1.2
 
-  postcss-selector-parser@6.1.2:
+
+  /postcss-selector-parser@6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+    dev: true
+
+  /postcss-selector-parser@6.1.2:
+    resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
+    engines: {node: '>=4'}
+
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
@@ -5374,7 +5430,11 @@ snapshots:
 
   signal-exit@4.1.0: {}
 
-  simple-swizzle@0.2.2:
+
+  /simple-swizzle@0.2.2:
+    resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
+    requiresBuild: true
+
     dependencies:
       is-arrayish: 0.3.2
 

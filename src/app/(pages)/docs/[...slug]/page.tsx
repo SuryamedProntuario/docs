@@ -8,12 +8,6 @@ import { MDXContent } from "@/components/mdx-components"
 import { Button } from "@/components/ui/button"
 import { posts } from "#site/content"
 
-// interface PostPageProps {
-//   params: {
-//     slug: string[]
-//   }
-// }
-
 export const metadata: Metadata = {
   title: "Suryamed",
 }
@@ -45,13 +39,17 @@ export default async function PostPage({ params }: any) {
 
   return (
     <>
-      <div className="flex w-full max-w-4xl flex-col gap-24 px-8">
+      <div className="flex w-full max-w-2xl flex-col gap-24 px-8">
         <div className="flex w-full flex-col items-start justify-start">
-          <h1 className="text-4xl font-bold tracking-tighter">{post.title}</h1>
+          <h1 className="text-4xl font-bold tracking-tighter text-primary">
+            {post.title}
+          </h1>
           {post.description ? (
-            <p className="italic">{post.description}</p>
+            <p className="text-sm font-semibold italic text-primary/70">
+              {post.description}
+            </p>
           ) : null}
-          <span className="mt-4 text-sm font-bold">
+          <span className="mt-4 text-xs font-bold text-primary">
             Atualizado em:{" "}
             <time dateTime={post.date}>{format(post.date, "dd/MM/yyyy")}</time>
           </span>
@@ -60,7 +58,7 @@ export default async function PostPage({ params }: any) {
             <LinkLucide className="size-4" />
           </Button>
           <div className="my-4 h-0.5 w-full rounded-full bg-muted" />
-          <div className="prose prose-headings:text-foreground prose-p:text-foreground prose-a:underline prose-blockquote:text-foreground prose-strong:font-bold prose-strong:text-foreground w-full text-foreground">
+          <div className="prose prose-headings:text-foreground prose-p:text-foreground prose-a:underline prose-blockquote:text-foreground prose-strong:font-bold prose-strong:text-foreground w-full space-y-4 text-foreground">
             <MDXContent code={post.body} />
           </div>
         </div>
