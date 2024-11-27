@@ -1,4 +1,4 @@
-import { TriangleAlert } from "lucide-react"
+import { CircleAlert, CircleX, TriangleAlert } from "lucide-react"
 import { ReactNode } from "react"
 
 import { cn } from "@/lib/utils"
@@ -15,16 +15,35 @@ export function PostAtention({
 }: PostAtentionProps) {
   return (
     <div
-      className={cn("flex w-full gap-3 rounded border bg-muted/70 p-1", {
-        "border-red-500 bg-red-100": type === "danger",
-        "border-yellow-500 bg-yellow-100": type === "warning",
+      className={cn("flex w-full gap-3 rounded border bg-muted/50 p-4", {
+        "border-red-300 bg-red-100": type === "danger",
+        "border-yellow-300 bg-yellow-100": type === "warning",
       })}
       {...props}
     >
-      <TriangleAlert className="" />
+      {type === "default" && <CircleAlert className="" />}
+      {type === "warning" && <TriangleAlert className="text-yellow-500" />}
+      {type === "danger" && <CircleX className="text-red-500" />}
+
       <div className="flex w-full flex-col items-start justify-start">
-        <span className="block">Atenção</span>
-        <span className="block text-sm">{children}</span>
+        <span
+          className={cn("mb-2 text-sm font-semibold", {
+            "text-red-500": type === "danger",
+            "text-yellow-500": type === "warning",
+          })}
+          {...props}
+        >
+          Atenção
+        </span>
+        <span
+          className={cn("text-sm font-medium", {
+            "text-red-500": type === "danger",
+            "text-yellow-500": type === "warning",
+          })}
+          {...props}
+        >
+          {children}
+        </span>
       </div>
     </div>
   )

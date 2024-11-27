@@ -13,13 +13,13 @@ export default async function Docs() {
   const displayPosts = sortedPosts
 
   return (
-    <div className="flex w-full max-w-4xl flex-col gap-24 px-8">
+    <div className="flex w-full max-w-4xl flex-col gap-24 lg:px-8">
       <div className="flex w-full flex-col items-start justify-start">
-        <h1 className="text-5xl font-bold tracking-tighter text-primary">
+        <h1 className="text-2xl font-bold tracking-tighter text-primary lg:text-5xl">
           Começando com SuryaMED
         </h1>
         <div className="w-full">
-          <span className="ml-4 text-xl font-semibold tracking-tighter text-primary">
+          <span className="text-base font-semibold tracking-tighter text-primary lg:ml-4 lg:text-xl">
             Seu prontuário online integrado com Inteligência Artificial.
           </span>
           <hr className="mb-8 mt-4" />

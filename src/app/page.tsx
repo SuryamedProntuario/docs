@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 export default function Home() {
   return (
     <>
-      <div className="relative z-10 flex min-h-[calc(100dvh-50px)] flex-col items-center justify-center overflow-hidden">
+      <div className="relative z-10 flex min-h-[calc(100dvh-50px)] flex-col items-center justify-center overflow-hidden px-4">
         <motion.img
           initial={{
             translateY: 100,
@@ -43,7 +43,7 @@ export default function Home() {
               duration: 1, // Duração da animação
             },
           }}
-          className="mb-20 bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-center text-6xl font-extrabold tracking-tight text-transparent"
+          className="mb-20 bg-gradient-to-b from-primary to-primary/50 bg-clip-text text-center text-2xl font-extrabold tracking-tight text-transparent lg:text-6xl"
         >
           SuryaMED Prontuário médico de ponta
         </motion.h1>
@@ -63,7 +63,7 @@ export default function Home() {
               duration: 0.8, // Duração da animação
             },
           }}
-          className="mb-8 max-w-2xl text-center text-lg font-normal text-muted-foreground"
+          className="mb-8 max-w-2xl text-center text-base font-normal text-muted-foreground lg:text-lg"
         >
           Aprimore seus atendimentos com{" "}
           <span className="font-bold text-primary">
