@@ -49,31 +49,28 @@ export function MenuNavegacaoLateral() {
                 title="Editar clínica"
                 link="/docs/editar-clinica"
               />
-              <DocsItem.Link
-                title="Excluir clínica"
-                link="/docs/excluir-clinica"
-              />
-              <DocsItem.Link
-                title="Consultas por clínica"
-                link="/docs/consultas-por-clinica"
-              />
             </DocsItem.List>
           </DocsItem.Root>
 
           <DocsItem.Root>
             <DocsItem.Title>Consulta</DocsItem.Title>
             <DocsItem.List>
-              <DocsItem.Link title="Nova consulta" link="/docs/hello-world" />
+              <DocsItem.Link title="Nova consulta" link="/docs/nova-consulta" />
               <DocsItem.Link
                 title="Editar consulta"
                 link="/docs/editar-consulta"
               />
               <DocsItem.Link
-                title="Excluir consulta"
-                link="/docs/excluir-consulta"
+                title="Geração de documentos médicos com IA"
+                link="/docs/gerar-documentos"
               />
               <DocsItem.Link
                 title="Procurar por consultas"
+                link="/docs/procurar-por-consultas"
+              />
+
+              <DocsItem.Link
+                title="Categorizar consulta"
                 link="/docs/procurar-por-consultas"
               />
             </DocsItem.List>
