@@ -100,6 +100,7 @@ devDependencies:
     specifier: ^0.2.1
     version: 0.2.1(acorn@8.14.0)
 
+
 packages:
 
   '@alloc/quick-lru@5.2.0':
@@ -3257,8 +3258,6 @@ snapshots:
       '@radix-ui/react-roving-focus': 1.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106))(react@19.0.0-rc-66855b96-20241106)
       '@radix-ui/react-slot': 1.1.0(@types/react@18.3.12)(react@19.0.0-rc-66855b96-20241106)
       '@radix-ui/react-use-callback-ref': 1.1.0(@types/react@18.3.12)(react@19.0.0-rc-66855b96-20241106)
-      '@types/react': 18.3.12
-      '@types/react-dom': 18.3.1
       aria-hidden: 1.2.4
       react: 19.0.0-rc-66855b96-20241106
       react-dom: 19.0.0-rc-66855b96-20241106(react@19.0.0-rc-66855b96-20241106)
