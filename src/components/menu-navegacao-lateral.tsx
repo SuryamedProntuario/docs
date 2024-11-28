@@ -63,7 +63,7 @@ export function MenuNavegacaoLateral() {
                 title="Editar consulta"
                 link="/docs/editar-consulta"
               />
-              <DocsItem.Link
+              {/* <DocsItem.Link
                 title="Geração de documentos médicos com IA"
                 link="/docs/gerar-documentos"
               />
@@ -75,7 +75,7 @@ export function MenuNavegacaoLateral() {
               <DocsItem.Link
                 title="Categorizar consulta"
                 link="/docs/procurar-por-consultas"
-              />
+              /> */}
             </DocsItem.List>
           </DocsItem.Root>
         </ul>
