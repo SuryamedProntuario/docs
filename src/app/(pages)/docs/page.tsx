@@ -9,7 +9,12 @@ export const metadata: Metadata = {
 }
 
 export default async function Docs() {
-  const sortedPosts = sortPosts(posts.filter((post) => post.published))
+  console.log(posts)
+  const sortedPosts = sortPosts(
+    posts.filter(
+      (post) => post.published && post.slug !== "docs/politica-de-privacidade",
+    ),
+  )
   const displayPosts = sortedPosts
 
   return (
