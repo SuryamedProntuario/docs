@@ -3,6 +3,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 
+import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
@@ -29,18 +30,18 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className="light" style={{ colorScheme: "light" }}>
       <body
         className={`${cn("min-h-screen bg-background font-sans antialiased", geistSans.variable, geistMono.variable)} `}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+          defaultTheme="light"
+          enableSystem={false}
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
