@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site"
 export function Footer() {
   return (
     <footer className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-4 py-8">
-      <div className="flex w-full justify-between">
+      <div className="flex w-full flex-col items-center justify-between gap-7 lg:flex-row">
         <Link href="/">
           <Image
             width={36}
@@ -74,7 +74,7 @@ export function Footer() {
           </div>
         </nav>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col-reverse items-center justify-between gap-4 lg:flex-row">
         <span className="text-xs font-semibold text-muted-foreground">
           © 2024 SuryaMED
         </span>
