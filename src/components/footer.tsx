@@ -23,20 +23,17 @@ export function Footer() {
             </h3>
             <ul>
               <li>
-                <Link
-                  className="text-xs font-normal"
-                  href="/docs/politica-de-privacidade"
-                >
+                <Link className="text-xs font-normal" href="/docs">
                   Documentação
                 </Link>
               </li>
               <li>
-                <Link
+                <a
                   className="text-xs font-normal"
-                  href="/docs/politica-de-privacidade"
+                  href="https://suryamed.com.br"
                 >
                   Nosso site
-                </Link>
+                </a>
               </li>
               <li>
                 <a
