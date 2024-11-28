@@ -30,15 +30,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className="light" style={{ colorScheme: "light" }}>
       <body
         className={`${cn("min-h-screen bg-background font-sans antialiased", geistSans.variable, geistMono.variable)} `}
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+          defaultTheme="light"
+          enableSystem={false}
         >
           <Header />
           {children}
