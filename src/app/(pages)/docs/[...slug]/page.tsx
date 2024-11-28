@@ -58,7 +58,7 @@ export default async function PostPage({ params }: any) {
             <LinkLucide className="size-4" />
           </Button>
           <div className="my-4 h-0.5 w-full rounded-full bg-muted" />
-          <div className="prose prose-headings:text-foreground prose-p:text-foreground prose-a:underline prose-blockquote:text-foreground prose-strong:font-bold prose-strong:text-foreground w-full space-y-4 text-foreground">
+          <div className="prose w-full space-y-4 text-foreground prose-headings:text-foreground prose-p:text-foreground prose-a:underline prose-blockquote:text-foreground prose-strong:font-bold prose-strong:text-foreground">
             <MDXContent code={post.body} />
           </div>
         </div>
