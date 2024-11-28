@@ -13,7 +13,7 @@ export function Footer() {
             width={36}
             height={36}
             alt=""
-            src="/static/logotipo_suryamed_pequeno.png"
+            src="/images/logotipo_suryamed_pequeno.png"
           />
         </Link>
         <nav className="flex w-full max-w-[300px] justify-between gap-2">

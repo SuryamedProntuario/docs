@@ -22,7 +22,7 @@ export default function Home() {
               duration: 1, // Duração da animação
             },
           }}
-          src="/static/lp-hero-wpp.svg"
+          src="/images/lp-hero-wpp.svg"
           className="absolute z-0 w-full !brightness-0 dark:!brightness-100"
           alt=""
         />
