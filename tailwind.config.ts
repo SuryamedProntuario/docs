@@ -85,7 +85,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        heroBanner: 'url("/static/lp-hero-wpp.svg")',
+        heroBanner: 'url("/images/lp-hero-wpp.svg")',
       },
     },
   },
