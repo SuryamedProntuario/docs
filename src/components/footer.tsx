@@ -65,7 +65,7 @@ export function Footer() {
               <li>
                 <Link
                   className="text-xs font-normal"
-                  href="/docs/politica-de-privacidade"
+                  href="/docs/termos-e-condicoes"
                 >
                   Termos de serviço
                 </Link>
