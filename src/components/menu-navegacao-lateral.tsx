@@ -26,6 +26,15 @@ export function MenuNavegacaoLateral() {
       >
         <ul className="relative flex flex-col gap-6 px-2">
           <DocsItem.Root>
+            <DocsItem.Title>Conta</DocsItem.Title>
+            <DocsItem.List>
+              <DocsItem.Link
+                title="Redefinição de senha"
+                link="/docs/reset-password"
+              />
+            </DocsItem.List>
+          </DocsItem.Root>
+          <DocsItem.Root>
             <DocsItem.Title>Paciente</DocsItem.Title>
             <DocsItem.List>
               <DocsItem.Link title="Novo paciente" link="/docs/novo-paciente" />
